@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卜公花園匹克球意見反映</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background-color: #f2f2f7; padding: 20px; color: #1c1c1e; }
+        .container { max-width: 500px; margin: 0 auto; }
+        .card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { color: #007aff; font-size: 1.1rem; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .box { background: #f8f8f8; border: 1px solid #ddd; padding: 12px; border-radius: 8px; font-size: 0.9rem; white-space: pre-wrap; margin: 10px 0; }
+        .btn { display: block; width: 100%; padding: 14px; text-align: center; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 10px; border: none; font-size: 1rem; cursor: pointer; }
+        .btn-copy { background: #e5e5ea; color: #000; }
+        .btn-mail { background: #007aff; color: white; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>致：區議員 (施、葉、張)</h2>
+        <div class="box" id="m1">致 施永泰、葉亦楠、張嘉恩區議員：
+您好。本人是匹克球愛好者。就 貴辦事處近期關注卜公花園噪音問題，本人希望反映：香港政府近年積極推廣匹克球這項新興運動... [你的姓名] 啟</div>
+        <button class="btn btn-copy" onclick="copy('m1')">📋 複製正文</button>
+        <a href="mailto:noelshih@dab.org.hk,rexip@dab.org.hk,irischeungky@dab.org.hk?subject=關於卜公花園匹克球安排之意見&body=致 施永泰、葉亦楠、張嘉恩區議員：%0A%0A您好。本人是匹克球愛好者。就 貴辦事處近期關注卜公花園噪音問題，本人希望反映：香港政府近年積極推廣匹克球這項新興運動，卜公花園的使用群體眾多，絕非少數。醫學已證明這是一項極佳的有益身心活動，理應獲得維持甚至擴展，而非調返轉削減使用時間。%0A%0A我們理解居民訴求，但強烈反對在「未有替代場地」前減時。這會直接打壓這項有益運動。希望 貴辦事處向政府爭取優化場地設施（如改善隔音）及物色更多遠離民居的場地，而非單純削減現有資源。請考慮暫緩減時行動，平衡各方利益。%0A%0A[你的姓名] 啟" class="btn btn-mail">📧 直接發電郵</a>
+    </div>
+
+    <div class="card">
+        <h2>致：康文署</h2>
+        <div class="box" id="m2">致 康文署：
+本人就卜公花園匹克球噪音投訴一事表達關注。匹克球是政府大力推廣的新興運動，卜公花園的使用人數極其眾多... [你的姓名] 啟</div>
+        <button class="btn btn-copy" onclick="copy('m2')">📋 複製正文</button>
+        <a href="mailto:enquiries@lcsd.gov.hk?subject=反對在未提供替代場地前削減卜公花園匹克球時段&body=致 康文署：%0A%0A本人就卜公花園匹克球噪音投訴一事表達關注。匹克球是政府大力推廣的新興運動，卜公花園的使用人數極其眾多，反映出社會s的殷切需求。醫學證明這類活動對市民身心大有裨益，政府理應優化並維持相關空間。%0A%0A本人要求 署方在提供充足替代場地前，暫緩減少卜公花園租用時間。單方面減時與政府推廣體育的政策背道而馳。建議 署方應著眼於優化場地規劃與隔音設計，從技術層面解決問題，而非簡單削減使用時間，守護市民的運動權利。%0A%0A[你的姓名] 啟" class="btn btn-mail">📧 直接發電郵</a>
+    </div>
+</div>
+<script>
+    function copy(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => alert('✅ 已複製！'));
+    }
+</script>
+</body>
+</html>
